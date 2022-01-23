@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Box {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: -3px 7px 33px -5px rgba(0, 0, 0, 0.41);
+  padding: 1rem 2.2rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.Title {
+  color: #607D8B;
+  font-size: 1.8em;
+  margin: 9px;
+}
+
+.inputField {
+  background: #e0e8ef;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+.Icon {
+  color: #607D8B;
+  font-size: 1.4em !important;
+  padding: 0;
+  font-weight: bold;
+}
+
+.RedIcon:hover {
+  color: red;
+}
+
+.TodoContent {
+  height: 320px;
+  overflow: auto;
+}
+
+.todo {
+  position: relative;
+  list-style: none;
+  font-size: 18px;
+  padding: 10px 0;
+  padding-left: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.todo:hover {
+  cursor: pointer;
+  color: #90A4AE;
+}
+
+.todo::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 13px;
+  height: 15px;
+  width: 15px;
+  background: transparent;
+  border: solid 2px #607D8B;
+  border-radius: 4px;
+}
+
+.todo:hover::before {
+  border-color: transparent;
+  background-color: #90A4AE;
+}
+
+.todo.completed {
+  text-decoration: line-through;
+  text-decoration-color: #607D8B;
+  text-decoration-thickness: 2px;
+  color: #b1b0b0;
+}
+
+.todo.completed::before {
+  background-color: #607D8B;
+}
+
+.todo span {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background: #F44336;
+  opacity: 0;
+  font-weight: 900;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 3px 4px;
+  text-transform: uppercase;
+}
+
+.todo:hover span {
+  opacity: 1;
+}
+
+
+
+.NoTodo {
+  font-size: 1.2em;
+  color: #607D8B;
+  text-align: center;
+  border: solid 2px #607D8B;
+  padding: 0.9rem 0;
+  border-radius: 4px;
+  list-style-type: none;
+  margin-left: 0 !important;
+
+}
+
+footer {
+  padding: 2rem 1rem 0;
+  color: #607D8B;
+}
+
+.Link {
+  text-decoration: none;
+  color: slateblue;
 }
