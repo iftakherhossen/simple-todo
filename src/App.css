@@ -25,22 +25,20 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  margin-bottom: 15px;
 }
 
 .Title {
   color: #607D8B;
-  font-size: 1.8em;
-  margin: 9px;
+  font-size: 3em !important;
+  margin: 0 !important;
 }
 
 .inputField {
   background: #e0e8ef;
   border: none;
-  font-size: 16px;
   width: 100%;
   border-radius: 4px;
+  margin-bottom: 14px !important;
 }
 
 
@@ -63,11 +61,10 @@ form {
 .todo {
   position: relative;
   list-style: none;
-  font-size: 18px;
-  padding: 10px 0;
-  padding-left: 2rem;
+  font-size: 1.9em !important;
+  padding: 3px 0;
   font-weight: 600;
-  color: black;
+  color: #282C34;
 }
 
 .todo:hover {
@@ -79,7 +76,7 @@ form {
   content: '';
   position: absolute;
   display: block;
-  left: 0;
+  left: -40px;
   top: 13px;
   height: 15px;
   width: 15px;
@@ -110,18 +107,14 @@ form {
   color: #fff;
   background: #F44336;
   opacity: 0;
-  font-weight: 900;
-  font-size: 12px;
+  font-size: 10px;
   border-radius: 4px;
-  padding: 3px 4px;
-  text-transform: uppercase;
+  padding: 4px 4px 0;
 }
 
 .todo:hover span {
   opacity: 1;
 }
-
-
 
 .NoTodo {
   font-size: 1.2em;

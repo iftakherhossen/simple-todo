@@ -27,15 +27,15 @@ const Header = ({ addNewTodo }) => {
                             className="inputField"
                         />
                         :
-                        <h1 id="title" className="Title">Todo List</h1>
+                        <h1 className="Title">Todo List</h1>
                 }
                 {
                     !visible ?
-                        <IconButton>
+                        <IconButton sx={{mb: '15px'}}>
                             <AddIcon className="Icon" onClick={handleVisibility} />
                         </IconButton>
                         :
-                        <IconButton>
+                        <IconButton sx={{ mb: '15px' }}>
                             <ClearIcon className="Icon RedIcon" onClick={handleVisibility} />
                         </IconButton>
                 }
