@@ -117,15 +117,14 @@ form {
 }
 
 .NoTodo {
-  font-size: 1.2em;
+  font-size: 2em;
   color: #607D8B;
   text-align: center;
   border: solid 2px #607D8B;
-  padding: 0.9rem 0;
+  padding: 0.4rem 0 0.1rem;
   border-radius: 4px;
   list-style-type: none;
-  margin-left: 0 !important;
-
+  margin-left: -40px !important;
 }
 
 footer {
